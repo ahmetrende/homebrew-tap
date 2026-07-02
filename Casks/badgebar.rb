@@ -1,6 +1,6 @@
 cask "badgebar" do
-  version "1.0.1"
-  sha256 "de2fc25d78313c1b38b209f0344dc19ce0d2b4ff1179dbc84aa733bdacdd261b"
+  version "1.0.2"
+  sha256 "0325c3a9d391e35f14c18d604d6ef2be91f5aebccca1911ea458e9df5348cbd6"
 
   url "https://github.com/ahmetrende/BadgeBar/releases/download/v#{version}/BadgeBar.dmg"
   name "BadgeBar"
@@ -10,6 +10,8 @@ cask "badgebar" do
   depends_on macos: ">= :sonoma"
 
   app "BadgeBar.app"
+
+  uninstall quit: "com.ahmetrende.badgebar"
 
   zap trash: [
     "~/Library/Preferences/com.ahmetrende.badgebar.plist",

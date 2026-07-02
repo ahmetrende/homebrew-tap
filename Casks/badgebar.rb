@@ -4,7 +4,7 @@ cask "badgebar" do
 
   url "https://github.com/ahmetrende/BadgeBar/releases/download/v#{version}/BadgeBar.dmg"
   name "BadgeBar"
-  desc "Mirror app unread badges into the macOS menu bar"
+  desc "Mirror app unread badges into the menu bar"
   homepage "https://github.com/ahmetrende/BadgeBar"
 
   depends_on macos: :sonoma

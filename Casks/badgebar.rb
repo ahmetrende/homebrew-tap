@@ -7,15 +7,13 @@ cask "badgebar" do
   desc "Mirror app unread badges into the macOS menu bar"
   homepage "https://github.com/ahmetrende/BadgeBar"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "BadgeBar.app"
 
   uninstall quit: "com.ahmetrende.badgebar"
 
-  zap trash: [
-    "~/Library/Preferences/com.ahmetrende.badgebar.plist",
-  ]
+  zap trash: "~/Library/Preferences/com.ahmetrende.badgebar.plist"
 
   caveats <<~EOS
     BadgeBar is not notarized yet, so on first launch macOS will block it.

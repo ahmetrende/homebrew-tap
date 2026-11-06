@@ -1,6 +1,6 @@
 cask "badgebar" do
-  version "1.0.3"
-  sha256 "cd9dcae87be36d67a6746f9a895260c712226941bbdf6f892962245178fe4051"
+  version "1.0.4"
+  sha256 "7a35d5d0febb641b62f7f9c04a9be914cec2541021425c99e24d3e07ba379597"
 
   url "https://github.com/ahmetrende/BadgeBar/releases/download/v#{version}/BadgeBar.dmg"
   name "BadgeBar"
